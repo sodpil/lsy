@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名人图片</title>
+    <style>
+                body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .image-item {
+            margin: 10px;
+            width: calc(25% - 20px); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .image-item:hover {
+            transform: scale(1.05);
+        }
+        .image-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-item">
+            <img src="https://so.360tres.com/dmsmtyf/160_160_100/t016cddf32d8969796e.webp" alt="爱因斯坦">
+        </div>
+        <p>伟大的科学家爱因斯坦,开创了物理界的先河.</p>
+        <div class="image-item">
+            <img src="https://so.360tres.com/dmsmtyf/160_160_100/t01faf706b196a2d820_1.gif" alt="牛顿">
+        </div>
+        <p>现代物理学之父</p>
+        <div class="image-item">
+            <img src="https://so.360tres.com/dmsmtyf/160_160_100/t01b503b854a242400a.webp" alt="居里夫人">
+        </div>
+        <p>镭的发现者,两次诺奖的获得者</p>
+        <div class="image-item">
+            <img src="https://so.360tres.com/dmsmtyf/160_160_100/t01a9775bb0854e0d6f.webp" alt="钱学森">
+        </div>
+        <p>中国导弹之父</p>
+    </div>
+</body>
+</html>
